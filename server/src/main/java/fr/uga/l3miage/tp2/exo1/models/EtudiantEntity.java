@@ -12,5 +12,5 @@ public class EtudiantEntity {
     private  String nom;
     private String email;
     @ManyToMany
-    private Set <ClubSportEntity> clubSport;
+    private Set <ClubSportEntity> club_sport;
 }

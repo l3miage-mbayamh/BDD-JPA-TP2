@@ -11,6 +11,6 @@ public class ClubSportEntity {
     private Long id;
     private String nom;
     private String description;
-    @ManyToMany
+    @ManyToMany(mappedBy = "club_sport")
     private Set<EtudiantEntity> etudiant;
 }
