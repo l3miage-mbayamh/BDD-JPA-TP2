@@ -14,5 +14,5 @@ public class DeveloperMiageEntity {
     @Column(name="email")
     private String email;
     @ManyToMany
-    private Set<ProjetEntity > ProjetEntity;
+    private Set<ProjetEntity > projet;
 }

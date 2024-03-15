@@ -16,6 +16,6 @@ public class ProjetEntity {
     private String description;
 
     @ManyToMany(mappedBy = "DeveloperMiageEntity")
-    private Set<DeveloperMiageEntity > developerMiageEntity; //A modifier à
+    private Set<DeveloperMiageEntity > developerMiage;
 
 }
