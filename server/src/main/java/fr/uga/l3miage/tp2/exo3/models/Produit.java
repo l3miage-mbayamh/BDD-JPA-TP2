@@ -15,4 +15,7 @@ public class Produit {
 
     @ManyToOne
     private  Commande commande;
+    @ManyToOne
+    private CategorieDeProduit categorieDeProduit;
+
 }
