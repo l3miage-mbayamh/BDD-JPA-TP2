@@ -15,7 +15,7 @@ public class ProjetEntity {
     @Column(name="description")
     private String description;
 
-    @ManyToMany
-    private Set<DeveloperMiageEntity > developer_miage;
+    @ManyToMany(mappedBy = "projet")
+    private Set<DeveloperMiageEntity > developerMiage;
 
 }

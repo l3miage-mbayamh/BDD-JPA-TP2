@@ -13,6 +13,6 @@ public class DeveloperMiageEntity {
     private String firstname;
     @Column(name="email")
     private String email;
-    @ManyToMany (mappedBy = "developer_miage")
+    @ManyToMany
     private Set<ProjetEntity > projet;
 }
