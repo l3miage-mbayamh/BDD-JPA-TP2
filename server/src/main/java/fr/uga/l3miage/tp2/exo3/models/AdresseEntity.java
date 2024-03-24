@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Adresse {
+public class AdresseEntity {
     @Id
     private Long id;
     private String rue;
@@ -13,6 +13,5 @@ public class Adresse {
     private String codePostal;
     private String ville;
 
-    @OneToOne
-    private  Client client;
+
 }

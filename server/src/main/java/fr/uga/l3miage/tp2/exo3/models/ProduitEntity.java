@@ -3,10 +3,9 @@ package fr.uga.l3miage.tp2.exo3.models;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 @Entity
-public class Produit {
+public class ProduitEntity {
     @Id
     private Long id;
     private String nom;
@@ -14,8 +13,8 @@ public class Produit {
     private Integer quantite;
 
     @ManyToOne
-    private  Commande commande;
+    private CommandeEntity commandeEntity;
     @ManyToOne
-    private CategorieDeProduit categorieDeProduit;
+    private CategorieDeProduitEntity categorieDeProduitEntity;
 
 }

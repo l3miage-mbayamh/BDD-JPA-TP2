@@ -6,12 +6,12 @@ import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 
 @Entity
-public class Commande {
+public class CommandeEntity {
     @Id
     private Long id;
     private LocalDate date;
     private Double montant;
     @ManyToOne
-    private Client client;
+    private ClientEntity clientEntity;
 
 }

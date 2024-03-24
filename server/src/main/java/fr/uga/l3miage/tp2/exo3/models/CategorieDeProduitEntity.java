@@ -6,10 +6,10 @@ import javax.persistence.OneToMany;
 import java.util.Set;
 
 @Entity
-public class CategorieDeProduit {
+public class CategorieDeProduitEntity {
     @Id
     private Long id;
     private String nom;
     @OneToMany
-    private Set<Produit> produits;
+    private Set<ProduitEntity> produitEntities;
 }
